@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/signup.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <a href="/" class="auth-home-link">GO BACK HOME</a>
+        <div class="signup-container">
+          <form id="login_form">
+            <h1>Log Into Your Account</h1>
+            <div class="input-container">
+              <label>Email</label>
+              <input class="auth-inputs"  id="email_input" type="text" />
+              <p id="email_error_message" class="error"></p>
+            </div>
+            <div class="input-container">
+              <label for="">Password</label>
+              <input class="auth-inputs" id="password_input" type="password" name="" id="" />
+              <p id="password_error_message" class="error"></p>
+            </div>
+            <p>
+              don't have an account?
+              <span>
+                <a href="/i/signup"> signup </a>
+              </span>
+            </p>
+            <p class="signup_error_message"></p>
+            <button id="login_btn">Next</button>
+          </form>
+        </div>
+      </div>
+      <div class="header-right">
+        <img src="/assets/signup.svg" alt="" srcset="" />
+      </div>
+    </header>
+    <script src="/scripts/login.js"></script>
+  </body>
+</html>

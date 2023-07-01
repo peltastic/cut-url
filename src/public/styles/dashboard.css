@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+ display: flex;
+ /* align-items: center; */
+ height: 70vh;
+ padding: 2rem 0;
+}
+.header-left {
+    flex: 0 0 35%;
+  }
+  .header-left img {
+    margin-top: 5rem;
+  }
+.header-right {
+    flex: 0 0 65%;
+    padding: 0 5rem;
+  }
+.error_message {
+  color: #cd3434;
+  margin-left: 6rem;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+  .header-right h1 {
+    margin-bottom: 2rem;
+    width: 80%;
+    margin-left: 4rem;
+    margin-top: 10rem;
+  }
+
+.input-container {
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+
+.short-link{
+ text-align: center;
+ width: 50%;
+ margin: auto;
+ font-size: 1.3rem;
+ margin-right: 25rem;
+ margin-top: 3rem;
+ padding: 1rem 0;
+ box-shadow: 10px 10px 8px #88888887;
+} 
+
+.input-container input {
+    flex: 0 0 70%;
+    padding: 2rem;
+    outline: none;
+    border-radius: 10rem 0 0 10rem;
+    border: 2px solid #e08c3c;
+}
+
+.input-container button {
+    outline: none;
+    border-radius:  0 10rem 10rem 0;
+    background: #e08c3c;
+    color: white;
+    border: none;
+    padding: 0 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-top: 7rem;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+
+}
+
+td {
+  font-size: 1.3rem;
+}
+th {
+  font-size: 1.4rem;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.row h1 {
+  font-size: 1.7rem;
+  width: 50%;
+}
+.row p {
+  width: 50%;
+}

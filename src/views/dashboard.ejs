@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <img src="/assets/dashboard.svg" alt="" srcset="" />
+      </div>
+      <div class="header-right">
+        <h1>
+          Welcome to your user dashboard, Shorten Your Long Url Links and
+          Receive Analytics on those links
+        </h1>
+        <form>
+          <div class="input-container">
+            <input id="generate-input" type="text" placeholder="Paste Url" />
+            <button id="generate-btn">Generate</button>
+          </div>
+        </form>
+        <p class="error_message"></p>
+        <p id="short-link" class=""></p>
+        <table>
+          <tr>
+            <th>Generated Link</th>
+            <th>Clicks</th>
+            <th>Date</th>
+          </tr>
+          <!-- <tr>
+            <td>http://localhost:8000/GdL4Orgle</td>
+            <td>2</td>
+          </tr> -->
+        </table>
+      </div>
+    </header>
+    <script src="/scripts/dashboard.js"></script>
+  </body>
+</html>
