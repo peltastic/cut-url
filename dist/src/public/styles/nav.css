@@ -1,0 +1,37 @@
+nav {
+    display: flex;
+    padding: 2rem 4rem;
+    box-shadow: -1px 12px 10px -4px rgba(161,161,161,0.75);
+-webkit-box-shadow: -1px 12px 10px -4px rgba(161,161,161,0.75);
+-moz-box-shadow: -1px 12px 10px -4px rgba(161,161,161,0.75);
+}
+
+.logo-img{
+    width: 3rem;
+}
+
+.logo-text{
+
+color: #e08c3c;
+}
+
+nav h1 {
+    font-size: 3rem;
+}
+
+nav .nav-buttons button {
+    color: white;
+    background-color: #e08c3c;
+    border: none;
+    margin-left: 1rem;
+    width: 7rem;
+    height: 4rem;
+    align-items: center;
+    cursor: pointer;
+    border-radius: .2rem;
+}
+
+nav .nav-buttons {
+    display: flex;
+    margin-left: auto;
+}

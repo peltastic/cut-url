@@ -1,0 +1,25 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const path_1 = __importDefault(require("path"));
+const config_1 = __importDefault(require("config"));
+const connectDb_1 = __importDefault(require("./utils/connectDb"));
+const urls_routes_1 = __importDefault(require("./routes/urls.routes"));
+const user_routes_1 = __importDefault(require("./routes/user.routes"));
+const pages_routes_1 = __importDefault(require("./routes/pages.routes"));
+const getUrl_routes_1 = __importDefault(require("./routes/getUrl.routes"));
+const PORT = config_1.default.get("PORT") || 8000;
+const app = (0, express_1.default)();
+app.set("view engine", "ejs");
+app.set("views", path_1.default.join(__dirname, "views"));
+app.use(express_1.default.static(path_1.default.join(__dirname, "public")));
+app.use(express_1.default.json());
+app.use(getUrl_routes_1.default);
+app.use("/i", pages_routes_1.default);
+app.use("/api/users", user_routes_1.default);
+app.use("/api/urls", urls_routes_1.default);
+(0, connectDb_1.default)();
+app.listen(PORT, () => console.log(`App Listening at PORT ${PORT}`));
